@@ -5,7 +5,7 @@ sys.path.append(panelPath + "class/")
 import public,time,json
 import db
 
-username = 'admin'
+username = 'username'
 password = 'password'
 
 sql = db.Sql()

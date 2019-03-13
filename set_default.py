@@ -14,3 +14,6 @@ sql.table('users').where('id=?',(1,)).setField('username',username)
 
 admin_path_file = 'data/admin_path.pl'
 public.writeFile(admin_path_file,'/')
+
+password_path_file = 'default.pl'
+public.writeFile(password_path_file,password)

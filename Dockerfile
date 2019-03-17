@@ -1,4 +1,4 @@
-FROM pch18/baota:init
+FROM pch18/baota:_init
 MAINTAINER pch18.cn
 
 COPY set_default.py /set_default.py

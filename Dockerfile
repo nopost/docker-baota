@@ -1,2 +1,2 @@
-FROM pch18/baota:lnmp
-MAINTAINER pch18.cn
+FROM registry.cn-hangzhou.aliyuncs.com/zihao/docker_baota:lnmp
+MAINTAINER nopost@vip.qq.com

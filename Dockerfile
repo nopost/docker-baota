@@ -1,5 +1,5 @@
-FROM pch18/baota:_init
-MAINTAINER pch18.cn
+FROM registry.cn-hangzhou.aliyuncs.com/zihao/docker_baota:init
+MAINTAINER nopost@vip.qq.com
 
 COPY set_default.py /set_default.py
 

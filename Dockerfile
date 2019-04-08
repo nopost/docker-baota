@@ -1,2 +1,2 @@
-FROM registry.cn-hangzhou.aliyuncs.com/zihao/docker_baota:lnmp
+FROM ccr.ccs.tencentyun.com/zihao/docker-baota:lnmp
 MAINTAINER nopost@vip.qq.com

@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/zihao/docker_baota:init
+FROM ccr.ccs.tencentyun.com/zihao/docker-baota:_init
 MAINTAINER nopost@vip.qq.com
 
 COPY set_default.py /set_default.py

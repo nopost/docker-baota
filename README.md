@@ -1,3 +1,13 @@
+
+
+被墙？没鸟办法，只好改改然后~使用阿里云~
+
+
+
+
+# forked from pch18/docker-baota
+
+
 # 宝塔面板一键docker部署 
 镜像为绑定github的dockerfile文件在dockerHub上自动生成,所以不可能有植入后台的行为,请放心使用.  
 镜像生成文件可以在github上查看.请大家监督.  

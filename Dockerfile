@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/zihao/docker_baota:base6.0
+FROM ccr.ccs.tencentyun.com/zihao/docker-baota:_base6.0
 MAINTAINER nopost@vip.qq.com
 
 RUN cd /www/server/panel \

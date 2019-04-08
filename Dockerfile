@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER pch18.cn
+MAINTAINER nopost@vip.qq.com 
 
 #更新系统
 RUN yum -y update \
@@ -16,5 +16,4 @@ RUN mkdir -p /www/letsencrypt \
 
 CMD /entrypoint.sh
 EXPOSE 8888 888 21 20 443 80
-
 HEALTHCHECK --interval=5s --timeout=3s CMD curl -fs http://localhost/ || exit 1 

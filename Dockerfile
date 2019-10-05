@@ -3,7 +3,7 @@ MAINTAINER nopost@vip.qq.com
 
 #更新系统
 RUN yum -y update \
-    && yum -y install wget openssl openssh-server
+    && yum -y install wget passwd openssl openssh-server  openssh-clients
 
 #设置entrypoint和letsencrypt映射到www文件夹下持久化
 COPY entrypoint.sh /entrypoint.sh

@@ -1,17 +1,7 @@
-mkdir  /var/run/sshd/
-sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config
-ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
-ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key
-ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
-
-
-
-
-
-for file in `ls /etc/init.d`
-do if [ -x /etc/init.d/${file} ];  then 
-    /etc/init.d/$file restart
-fi done
-crond
-bt default
-tail -f /dev/null
+ #sshd_server
+    ssh-keygen -t dsa -f ~/.ssh/id_dsa -P "" && 
+    sed -i "s/root.*/root:x:0:0:root:\/root:\/bin\/bash/g" /etc/passwd 
+    sed -i "s/#UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config 
+    sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config 
+    echo root:nopostBAE8588|chpasswd  
+    mkdir -p /var/run/sshd

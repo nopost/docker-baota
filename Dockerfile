@@ -5,9 +5,8 @@ MAINTAINER nopost@vip.qq.com
 RUN yum -y update \
     && yum -y install wget unzip telnet passwd openssl openssh-server  openssh-clients
 
-#设置entrypoint和letsencrypt映射到www文件夹下持久化
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
-CMD /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D", "-e", "-f", "/etc/ssh/sshd_config"]
